@@ -1,8 +1,15 @@
+import TheNavbar from "./components/TheNavbar";
+
 function App() {
   return (
-    <h1 className="text-3xl font-bold underline underline-offset-1">
-      Hello world!
-    </h1>
+    <div className="min-h-screen">
+      <TheNavbar />
+      <div className="mx-auto max-w-5xl px-4 pt-2">
+        <section id="about"></section>
+        <section id="projects"></section>
+        <section id="contact"></section>
+      </div>
+    </div>
   );
 }
 
