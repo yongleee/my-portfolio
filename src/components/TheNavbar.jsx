@@ -4,14 +4,14 @@ export default function TheNavbar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <header className="relative">
-      <div className="flex justify-between items-center flex-wrap xl:max-w-5xl xl:mx-auto max-w-full px-4">
+      <div className="flex justify-between items-center flex-wrap xl:max-w-5xl xl:mx-auto max-w-full font-roboto pt-7">
         {/* logo */}
         <a href="#">
-          <h1>Yong Le</h1>
+          <h1 className="px-5 text-stone-300 font-semibold">Yong Le</h1>
         </a>
         <div className="lg:hidden block absolute top-4 right-4">
           <button
-            className="text-neutral-300"
+            className="text-stone-300"
             onClick={() => setIsOpen((prev) => !prev)}
           >
             {!isOpen ? (
@@ -49,13 +49,13 @@ export default function TheNavbar() {
         </div>
         <nav>
           <ul className={`lg:flex ${isOpen ? "block" : "hidden"}`}>
-            <li>
+            <li className="px-5 text-stone-300">
               <a href="#about">// about</a>
             </li>
-            <li>
+            <li className="px-5 text-stone-300">
               <a href="#projects">// projects</a>
             </li>
-            <li>
+            <li className="px-5 text-stone-300">
               <a href="#contact">// contact</a>
             </li>
           </ul>
